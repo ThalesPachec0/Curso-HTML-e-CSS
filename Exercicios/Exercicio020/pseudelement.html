@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo elementos</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+            color: red;
+        }
+
+        a:hover {
+
+            text-decoration: underline;
+            background-color: blue;
+        }
+        a:visited {
+            color: black;
+        }
+
+        a:active {
+            color: yellow;
+            font-weight: bolder;
+        }
+        .youtube::before {
+            content: '♫';
+        }
+    </style>
+</head>
+<body>
+ <h1>Gerando Links</h1>  
+ <ul>
+    <li><a href="https://ge.globo.com/" target="_blank">Globoesporte.com</a></li>
+    <li><a href="https://youtube.com" target="_blank" rel="next" class="youtube">Youtube.com</a></li>
+    <li><a href="https://Crunchyroll.com">Crunchyroll.com</a></li>
+ </ul> 
+</body>
+</html>
